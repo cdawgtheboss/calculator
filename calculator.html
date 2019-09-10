@@ -13,20 +13,20 @@
         <table>
             <tr>
                 <input type="text" name="display" 
-                id="display" disabled>
+                id="display" value="" disabled>
             </tr>
             <tr>
                 <td>
                     <input type="button" name="one" value="1"
-                    onclick="calculator.display.value += '1'">
+                    onclick="updateCalculator(1, calculator)">
                 </td>
                 <td>
                     <input type="button" name="two" value="2"
-                    onclick="calculator.display.value += '2'">
+                    onclick="updateCalculator(2, calculator)">
                 </td>
                 <td>
                     <input type="button" name="three" value="3"
-                    onclick="calculator.display.value += '3'">
+                    onclick="updateCalculator(3, calculator)">
                 </td>
                 <td>
                     <input type="button" class="operator" name="plus" value="+"
@@ -35,47 +35,47 @@
             <tr>
                 <td>
                     <input type="button" name="four" value="4"
-                    onclick="calculator.display.value += '4'">
+                    onclick="updateCalculator(4, calculator)">
                 </td>
                 <td>
                     <input type="button" name="five" value="5"
-                    onclick="calculator.display.value += '5'">
+                    onclick="updateCalculator(5, calculator)">
                 </td>
                 <td>
                     <input type="button" name="six" value="6"
-                    onclick="calculator.display.value += '6'">
+                    onclick="updateCalculator(6, calculator)">
                 </td>
                 <td>
                     <input type="button" class="operator" name="minus" value="-"
-                    onclick="calculator.display.value += '-'">
+                    onclick="updateCalculator('-', calculator)">
                 </td>
             </tr>
             <tr>
                 <td>
                     <input type="button" name="seven" value="7"
-                    onclick="calculator.display.value += '7'">
+                    onclick="updateCalculator(7, calculator)">
                 </td>
                 <td>
                     <input type="button" name="eight" value="8"
-                    onclick="calculator.display.value += '8'">
+                    onclick="updateCalculator(8, calculator)">
                 </td>
                 <td>
                     <input type="button" name="nine" value="9"
-                    onclick="calculator.display.value += '9'">
+                    onclick="updateCalculator(9, calculator)">
                 </td>
                 <td>
                     <input type="button" class="operator" name="multiply" value="*"
-                    onclick="calculator.display.value += '*'">
+                    onclick="updateCalculator('*', calculator)">
                 </td>
             </tr>
             <tr>
                 <td>
                     <input type="button" name="clear" value="C"
-                    onclick="calculator.display.value = ' '">
+                    onclick="clearCalculator(calculator)">
                 </td>
                 <td>                    
                     <input type="button" name="zero" value="0"
-                    onclick="calculator.display.value += '0'">
+                    onclick="updateCalculator(0, calculator)">
                 </td>
                 <td>
                     <input type="button" name="doit" value="="
@@ -83,7 +83,7 @@
                 </td>
                 <td>
                     <input type="button" name="divide" value="/"
-                    onclick="calculator.display.value += '/'">
+                    onclick="updateCalculator('/', calculator)">
                 </td>
             </tr>
         </table>
